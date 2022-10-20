@@ -91,6 +91,15 @@ html, body {
                     font-size: xx-large;
                     flex-basis: 100%;
                 }
+                #link {
+                    &--about {
+                        color: white;
+                    }
+                
+                    &--contact {
+                        color: black;
+                    }
+                }
                 @include m.desktop {
                     flex-wrap: wrap;
                     flex-direction: row;
@@ -123,13 +132,20 @@ html, body {
             flex-direction: column;
             align-items: center;
             justify-content: space-evenly;
+            @include m.desktop {
+                height: 300px;
+            }
             .contact {
                 display: flex;
                 flex-direction: column;
                 gap: 30px;
                 justify-content: space-evenly;
+                @include m.desktop {
+                    flex-direction: row;
+                    gap: 200px;
+                }
                 article {
-                    gap: 5px;
+                    gap: 10px;
                     display: flex;
                     flex-direction: column;
                     font-size: x-large;
@@ -145,11 +161,10 @@ html, body {
 #link {
     &--about {
         color: white;
+        text-align: center;
     }
 
     &--contact {
         color: black;
-        position: static;
-        padding: 50px;
     }
 }
