@@ -9,17 +9,24 @@
     <script src="https://kit.fontawesome.com/131d4698ad.js" crossorigin="anonymous"></script>
 </head>
 <body>
-        <section class="top-nav">
-            <input id="menu-toggle" type="checkbox" />
-            <label class='menu-button-container' for="menu-toggle">
-            <div class='menu-button'></div>
-          </label>
-            <ul class="menu">
-              <li><a href="#">Hem</a></li>
-              <li><a href="#about">Om</a></li>
-              <li><a href="#contact">Kontakt</a></li>
+    <header>
+        <input title="navclick" id="toggle" type="checkbox"></input>
+        <label for="toggle" class="hamburger">
+            <div class="hamburger__top-bun"></div>
+            <div class="hamburger__meat"></div>
+            <div class="hamburger__bottom-bun"></div>
+        </label>
+
+        <nav class="nav">
+        <nav class="nav__wrapper">
+            <ul class="nav__wrapper__items">
+                <li><a href="#">Hem</a></li>
+                <li><a href="#about">Om</a></li>
+                <li><a href="#contact">Kontakt</a></li>
             </ul>
-          </section>
+        </nav>
+        </nav>
+</header>
     <main>
         <section class="welcome">
         <h1>Welcome to nature</h1>
@@ -29,8 +36,9 @@
         <article>
             <p>To see how ...cotton ... is mage, made I mean...</p>
         </article>
-        <a title="about" id="link--about" href="#about"><i class="fa-solid fa-circle-arrow-down fa-2x"></i></a>   
-
+        <article>
+        <a title="about" id="link--about" href="#about"><i class="fa-solid fa-circle-arrow-down"></i></a>   
+        </article>
 
         </section>
         <section class="team" id="about">
@@ -58,7 +66,7 @@
                     <div class="team__profile__quote">
                         <i class="fa-solid fa-quote-right fa-3x"></i>En av våra utbildare som har stor erfarenhet av ganska många saker</div>
                 </div>
-                <a title="contact" id="link--contact" href="#contact"><i class="fa-solid fa-circle-arrow-down fa-3x"></i></a>   
+                <a title="contact" id="link--contact" href="#contact"><i class="fa-solid fa-circle-arrow-down fa-2x"></i></a>   
         </section>
     </main>
     <footer>

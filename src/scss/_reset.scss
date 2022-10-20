@@ -11,6 +11,7 @@ html, body {
         background-image: url(/assets/negative-space-black-forest-dawn.jpg);
         background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
         main {
             .welcome {
             height: 100vh;
@@ -25,7 +26,6 @@ html, body {
                 display: flex;
                 flex-direction: column;
                 text-align: center;
-                gap: 10px;
                 width: 100%;
                 @include m.desktop {
                     flex-wrap: wrap;
@@ -33,7 +33,7 @@ html, body {
                 }
                     &__profile {
                         @include m.desktop {
-                        width: 49%;
+                        width: 50%;
                         }
                         &__img {
                                 width: 60%;
@@ -74,5 +74,15 @@ html, body {
                 }
             }
         }
+    }
+}
+
+#link {
+    &--about {
+        color: white;
+    }
+
+    &--contact {
+        color: black;
     }
 }
