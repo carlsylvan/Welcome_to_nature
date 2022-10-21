@@ -6,8 +6,8 @@
 /* Hamburger */
 .hamburger {
   position: absolute;
-  top: 1em;
-  right: 2em;
+  top: 20px;
+  right: 25px;
   z-index: 5;
   cursor: pointer;
   @include m.desktop {
@@ -15,7 +15,7 @@
   }
   div {
   position: relative;
-  width: 3em;
+  width: 48px;
   height: 7px;
   border-radius: 3px;
   background-color: white;
