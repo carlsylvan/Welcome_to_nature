@@ -3,9 +3,7 @@
 #toggle {
   display: none;
 }
-/**
-  Hamburger
-**/
+/* Hamburger */
 .hamburger {
   position: absolute;
   top: 2em;
@@ -25,9 +23,7 @@
   transition: all 0.3s ease-in-out;
   }
 }
-/**
-Animations
-**/
+/* Animation */
 #toggle:checked + .hamburger .hamburger__top-bun {
   transform: rotate(135deg);
   margin-top: 25px;
